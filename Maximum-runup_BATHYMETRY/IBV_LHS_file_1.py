@@ -11,7 +11,6 @@ def IBV_LHS(Amp, T_per, t, h):
     
     h_left = max(h[:,0]);  
     
-#    h_LBC = h_left + Amp * np.sin( omega * t) * np.heaviside(4*T_per - t, 0.5);
     h_LBC = h_left + Amp * np.sin( omega * t);
     
     return  h_LBC
